@@ -35,8 +35,9 @@ if (command == "update") {
      alert(PatientListArray);
     }
    else if (command == "reorder") {
+      alert(PatientListArray + " is the current order ");
       PatientListArray.sort();
-      alert(PatientListArray);
+      alert(PatientListArray + " is the new order");
     }
     else{alert("Please enter a valid selection")}
   
