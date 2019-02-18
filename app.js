@@ -9,7 +9,7 @@ alert(PatientListArray);
 
 const command = prompt('Choose one: update, delete, add, reorder');
 
-if (command == "updated") {
+if (command == "update") {
   const OldPatient = prompt("Old Patient");
   const NewPatient = prompt("NewPatient");
   for (let i = 0; i < PatientListArray.length; i++) {
@@ -17,8 +17,10 @@ if (command == "updated") {
       PatientListArray[i] = NewPatient;
       alert(PatientListArray);
     }
-  
+  }
+}
   else if (command == "delete") {
+    const OldPatient = prompt("Old Patient");
     for (let i = 0; i < PatientListArray.length; i++) {
       if (PatientListArray[i] === OldPatient) {
         PatientListArray[i] = "";
@@ -37,5 +39,4 @@ if (command == "updated") {
       alert(PatientListArray);
     }
     else{alert("Please enter a valid selection")}
-  }
-}
+  
